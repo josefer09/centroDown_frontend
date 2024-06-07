@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../input.css">
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen">
+        <!-- Left Pane -->
+        <div class="hidden lg:flex items-center justify-center flex-1 bg-blue-600 text-black">
+          <div class="max-w-md text-center">
+            <div class="">
+                <img class="" src="/people-who-support-svgrepo-com.svg" alt="">
+              </div>
+          </div>
+        </div>
+        <!-- Right Pane -->
+        <div class="w-full bg-gray-100 lg:w-1/2 flex items-center justify-center">
+          <div class="max-w-md w-full p-6">
+            <h1 class="text-3xl font-semibold mb-6 text-black text-center">Iniciar Sesion</h1>
+            <h1 class="text-sm font-semibold mb-6 text-gray-500 text-center">Donde crecemos juntos </h1>
+            
+            <form id="form" class="space-y-4">
+              <!-- Your form elements go here -->
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electronico</label>
+                <input type="text" id="email" name="email" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+              </div>
+              <div>
+                <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                <input type="password" id="password" name="password" class="mt-1 p-2 w-full border rounded-md focus:border-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 transition-colors duration-300">
+              </div>
+              <div>
+                <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded-md hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-300">Iniciar Sesion</button>
+              </div>
+            </form>
+            <div class="mt-4 text-sm text-gray-600 text-center">
+              <p>¿No tienes una cuenta? crea una aqui: <a href="#" class="text-black hover:underline"> crear cuenta</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+    <script type="module" src="../apps/login.js"></script>
+</body>
+</html>

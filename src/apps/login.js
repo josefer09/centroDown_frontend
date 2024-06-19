@@ -31,11 +31,15 @@ import { isObjectEmpty } from "../helpers/funciones";
       });
 
       const { dataUser } = data;
-      // Guardar en localstorage el token
-      localStorage.setItem("token", dataUser.token);
+      // Guardar en localstorage la session del usuario
+      localStorage.setItem("userSession", JSON.stringify(dataUser));
       console.log(dataUser);
       // Redirigir al usuario
-      window.location.href = "../pages/admin.html";
+      if(dataUser.user.rol === "ADMIN") {
+        window.location.href = "../pages/admin.html";
+      } else if(dataUser.user.rol === "MAESTRO") {
+        window.location.href = "../pages/profesores/admin.html";
+      }
     } catch (error) {
       // Es la forma en la que response la API
       const {response} = error;

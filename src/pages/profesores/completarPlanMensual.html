@@ -94,71 +94,55 @@
         <div class="container mt-5 p-5">
           <div id="contenido" class="grid grid-cols-1 gap-4">
             <div class="agregar-cita bg-white rounded-lg p-6 shadow-md">
-              <form id="formulario">
+              <form id="">
                 <legend class="mb-4 font-semibold">Datos del Plan</legend>
-                <div class="mb-4">
-                  <label for="paciente" class="block mb-2">Alumno:</label>
-                  <select
-                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="id_user"
-                    name="userName"
-                  >
-                    <option value="" disabled selected>
-                      Seleccionar al alumno
-                    </option>
-                    <!-- Agrega más opciones según necesites -->
-                  </select>
-                </div>
-                <div class="mb-4">
-                  <label for="doctor" class="block mb-2">Profesor/a:</label>
-                  <select
-                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="id_employee"
-                    name="employee"
-                  >
-                    <option value="" disabled selected>
-                      Seleccionar el profesor correspondiente
-                    </option>
-                    <!-- Agrega más opciones según necesites -->
-                  </select>
-                </div>
-                <div class="mb-4">
-                    <label for="paciente" class="block mb-2">Plan de Trabajo Semestral:</label>
-                    <select
-                      class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                      id="id_user"
-                      name="userName"
-                    >
-                      <option value="" disabled selected>
-                        Seleccionar el plan semestral
-                      </option>
-                      <!-- Agrega más opciones según necesites -->
-                    </select>
-                  </div>
-                <div class="mb-4">
-                  <label for="fecha" class="block mb-2">Fecha Inicio:</label>
+                <div class="mb-4 flex items-center">
+                  <label for="id_user" class="block mb-2 mr-2 w-40">Nombre del Alumno:</label>
                   <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    class="w-full rounded border border-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-200"
-                  />
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="alumno"
+                    name="alumno"
+                    disabled
+                  >
                 </div>
-                <div class="mb-4">
-                    <label for="fecha" class="block mb-2">Fecha Fin:</label>
-                    <input
-                      type="date"
-                      id="date"
-                      name="date"
-                      class="w-full rounded border border-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-200"
-                    />
-                  </div>
+                <div class="mb-4 flex items-center">
+                  <label for="maestro" class="block mb-2 mr-2 w-40">Maestro/a:</label>
+                  <input
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="maestro"
+                    name="maestroName"
+                    disabled
+                  >
+                </div>
+                <div class="mb-4 flex items-center">
+                  <label for="periodo" class="block mb-2 mr-2 w-40">Periodo de Planeación:</label>
+                  <input
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="periodo"
+                    name="periodo"
+                    disabled
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-5 p-5">
+          <div id="contenido" class="grid grid-cols-1 gap-4">
+            <div class="agregar-cita bg-white rounded-lg p-6 shadow-md">
+              <form id="formulario">
+                <div class="border-b-2 mb-2">
+                  <legend class="mb-4 font-semibold">Marque los propósitos</legend>
+                <div id="propositosContainer" class="mb-4 flex items-center"></div>
+                <legend class="mb-4 font-semibold">Marque los aprendizajes esperados</legend>
+                <div id="aprendizajesContainer" class="mb-4 flex items-center"></div>
+                </div>
                 <div class="mt-4">
                   <button
                     type="submit"
                     class="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 uppercase font-bold"
                   >
-                    Continuar
+                    Crear Plan Mensual
                   </button>
                 </div>
               </form>

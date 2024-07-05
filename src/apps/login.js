@@ -39,6 +39,8 @@ import { isObjectEmpty } from "../helpers/funciones";
         window.location.href = "../pages/admin.html";
       } else if(dataUser.user.rol === "MAESTRO") {
         window.location.href = "../pages/profesores/admin.html";
+      } else if(dataUser.user.rol === "COORDINADOR") {
+        window.location.href = "../pages/coordinadora/index.html";
       }
     } catch (error) {
       // Es la forma en la que response la API

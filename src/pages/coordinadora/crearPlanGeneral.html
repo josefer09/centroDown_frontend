@@ -98,6 +98,16 @@
               <form id="formulario">
                 <legend class="mb-4 font-semibold">Datos del Plan</legend>
                 <div class="mb-4">
+                  <label for="nombre" class="block mb-2">Nombre:</label>
+                  <input
+                    class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Introduzca el nombre para el plan"
+                    >
+                </div>
+                <div class="mb-4">
                   <label for="paciente" class="block mb-2">Alumno:</label>
                   <select
                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -114,8 +124,8 @@
                   <label for="doctor" class="block mb-2">Profesor/a:</label>
                   <select
                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="id_employee"
-                    name="employee"
+                    id="profesores"
+                    name="profesores"
                   >
                     <option value="" disabled selected>
                       Seleccionar el profesor correspondiente
@@ -127,8 +137,8 @@
                   <label for="fecha" class="block mb-2">Fecha Inicio:</label>
                   <input
                     type="date"
-                    id="date"
-                    name="date"
+                    id="fechaInicio"
+                    name="fechaInicio"
                     class="w-full rounded border border-gray-300 focus:border-indigo-400 focus:ring focus:ring-indigo-200"
                   />
                 </div>
@@ -136,8 +146,8 @@
                     <label for="fecha" class="block mb-2">Fecha Fin:</label>
                     <input
                       type="date"
-                      id="date"
-                      name="date"
+                      id="fechaFin"
+                      name="fechaFin"
                       class="w-full rounded border border-gray-300 focus:border-indigo-400 focus:ring focus:ring-indigo-200"
                     />
                   </div>
@@ -153,6 +163,15 @@
                     >
                       Añadir Propósito
                     </button>
+                  </div>
+                  <div class="mb-4">
+                    <label for="descripcion" class="block mb-2">Descripcion:</label>
+                      <textarea
+                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        name="descripcion"
+                        id="descripcion"
+                        placeholder="Introduzca una descripcion para el plan semestral"
+                        ></textarea>
                   </div>
                 <div class="mt-4">
                   <button

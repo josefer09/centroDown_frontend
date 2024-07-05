@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal Coordinadora</title>
+    <link rel="stylesheet" href="../../input.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +18,7 @@
   <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
       <aside
-        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-blue-600 px-5 py-10 flex flex-col justify-between"
+        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-indigo-600 px-5 py-10 flex flex-col justify-between"
       >
         <div>
           <h1
@@ -22,28 +31,30 @@
           <p class="mt-10 text-white">Comienza a trabajar con tus alumnos</p>
           <nav class="mt-8">
             <a
-              href="./planTrabajoGeneral.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="./PlanTrabajoGeneral.html"
+              data-link
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Plan de Trabajo Semestral</a
             >
             <a
-              href="./planTrabajoMensual.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Plan de Trabajo Mensual</a
+              href="#"
+              data-link
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Plan de Trabajo desde casa</a
             >
             <a
-              href="./actividades.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Actividades</a
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Evaluacion diagnostica academica</a
             >
             <a
-              href="./propositos.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Propositos</a
             >
             <a
               href="#"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Aprendizajes Esperados</a
             >
           </nav>
@@ -53,7 +64,7 @@
         <div class="mt-auto flex items-center justify-start">
           <button
             id="logOut"
-            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-blue-500 cursor-pointer focus:ring-blue-400"
+            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-indigo-500 cursor-pointer focus:ring-indigo-400"
             title="cerrar-sesion"
           >
             <!-- SVG del ícono que proporcionaste -->
@@ -80,6 +91,11 @@
       <main class="md:w-3/5 xl:w-4/5 px-5 py-10 bg-gray-200">
         <h2 id="main" class="text-3xl font-light text-center">Menu Principal</h2>
       </main>
+      <div id="app"></div>
     </div>
+    <script src="../../apps/coordinadora/app.js"></script>
   </body>
+</html>
+
+</body>
 </html>

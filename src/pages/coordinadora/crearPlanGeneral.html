@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Plan General</title>
+    <link rel="stylesheet" href="../../input.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Generar Plan de Trabajo General</title>
+    <title>Menu Profesor</title>
     <link rel="stylesheet" href="../../input.css" />
   </head>
   <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
       <aside
-        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-blue-600 px-5 py-10 flex flex-col justify-between"
+        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-indigo-600 px-5 py-10 flex flex-col justify-between"
       >
         <div>
           <h1
@@ -22,39 +31,31 @@
           <p class="mt-10 text-white">Comienza a trabajar con tus alumnos</p>
           <nav class="mt-8">
             <a
-              href="./user.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="./PlanTrabajoGeneral.html"
+              data-link
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Plan de Trabajo Semestral</a
             >
             <a
-              href="./administration.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Plan de Trabajo Mensual</a
+              href="#"
+              data-link
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Plan de Trabajo desde casa</a
             >
             <a
-              href="./roles.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Actividades</a
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Evaluacion diagnostica academica</a
             >
             <a
-              href="./specialtys.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Propositos</a
             >
             <a
-              href="./patient.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Aprendizajes Esperados</a
-            >
-            <a
-              href="./procedure.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Procedimientos</a
-            >
-            <a
-              href="./appointment.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Citas</a
             >
           </nav>
         </div>
@@ -63,7 +64,7 @@
         <div class="mt-auto flex items-center justify-start">
           <button
             id="logOut"
-            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-blue-500 cursor-pointer focus:ring-blue-400"
+            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-indigo-500 cursor-pointer focus:ring-indigo-400"
             title="cerrar-sesion"
           >
             <!-- SVG del ícono que proporcionaste -->
@@ -100,10 +101,10 @@
                   <label for="paciente" class="block mb-2">Alumno:</label>
                   <select
                     class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="id_user"
-                    name="userName"
+                    id="alumnos"
+                    name="alumnos"
                   >
-                    <option value="" disabled selected>
+                    <option value="alumnos" disabled selected>
                       Seleccionar al alumno
                     </option>
                     <!-- Agrega más opciones según necesites -->
@@ -128,7 +129,7 @@
                     type="date"
                     id="date"
                     name="date"
-                    class="w-full rounded border border-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-200"
+                    class="w-full rounded border border-gray-300 focus:border-indigo-400 focus:ring focus:ring-indigo-200"
                   />
                 </div>
                 <div class="mb-4">
@@ -137,7 +138,7 @@
                       type="date"
                       id="date"
                       name="date"
-                      class="w-full rounded border border-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-200"
+                      class="w-full rounded border border-gray-300 focus:border-indigo-400 focus:ring focus:ring-indigo-200"
                     />
                   </div>
                 <div class="mb-4">
@@ -148,7 +149,7 @@
                     <button
                       id="addProposito"
                       type="button"
-                      class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 uppercase font-bold"
+                      class="mt-2 bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 focus:outline-none focus:ring focus:border-indigo-300 uppercase font-bold"
                     >
                       Añadir Propósito
                     </button>
@@ -156,7 +157,7 @@
                 <div class="mt-4">
                   <button
                     type="submit"
-                    class="bg-blue-500 text-white px-4 py-2 rounded w-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 uppercase font-bold"
+                    class="bg-indigo-500 text-white px-4 py-2 rounded w-full hover:bg-indigo-600 focus:outline-none focus:ring focus:border-indigo-300 uppercase font-bold"
                   >
                     Crear Plan de Trabajo
                   </button>
@@ -166,7 +167,11 @@
           </div>
         </div>
       </main>
+      <div id="app"></div>
     </div>
-    <script src="../../apps/profesores/planTrabajoGeneral.js"></script>
+    <script src="../../apps/coordinadora/crearPlanGeneral.js" type="module"></script>
   </body>
+</html>
+
+</body>
 </html>

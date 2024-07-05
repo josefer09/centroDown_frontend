@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal Coordinadora</title>
+    <link rel="stylesheet" href="../../input.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plan de Trabajo Mensual</title>
+    <title>Plan Trabajo General</title>
     <link rel="stylesheet" href="../../input.css" />
   </head>
   <body class="min-h-100 bg-gray-200">
     <div class="md:flex min-h-screen md:align-top">
       <aside
-        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-blue-600 px-5 py-10 flex flex-col justify-between"
+        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-indigo-600 px-5 py-10 flex flex-col justify-between"
       >
         <div>
           <h1
@@ -22,39 +31,30 @@
           <p class="mt-10 text-white">Comienza a trabajar con tus alumnos</p>
           <nav class="mt-8">
             <a
-              href="./user.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400 bg-blue-700"
+              href="./PlanTrabajoGeneral.html"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Plan de Trabajo Semestral</a
             >
             <a
-              href="./administration.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Plan de Trabajo Mensual</a
+              href="#"
+              data-link
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Plan de Trabajo desde casa</a
             >
             <a
-              href="./roles.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Actividades</a
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
+              >Evaluacion diagnostica academica</a
             >
             <a
-              href="./specialtys.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Propositos</a
             >
             <a
-              href="./patient.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
+              href="#"
+              class="px-3 py-1 text-white block hover:bg-indigo-700 hover:text-yellow-400"
               >Aprendizajes Esperados</a
-            >
-            <a
-              href="./procedure.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Procedimientos</a
-            >
-            <a
-              href="./appointment.html"
-              class="px-3 py-1 text-white block hover:bg-blue-700 hover:text-yellow-400"
-              >Citas</a
             >
           </nav>
         </div>
@@ -63,7 +63,7 @@
         <div class="mt-auto flex items-center justify-start">
           <button
             id="logOut"
-            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-blue-500 cursor-pointer focus:ring-blue-400"
+            class="flex items-center justify-center w-30 h-30 px-2 text-white focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-indigo-500 cursor-pointer focus:ring-indigo-400"
             title="cerrar-sesion"
           >
             <!-- SVG del ícono que proporcionaste -->
@@ -142,15 +142,19 @@
         </div>
         <div class="flex justify-center items-center py-2">
           <a
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
-            href="./generarPlanGeneral.html"
+            class="bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+            href="./crearPlanGeneral.html"
           >
             Nuevo Plan de Trabajo Semestral
           </a>
         </div>
         
       </main>
+      <div id="app"></div>
     </div>
-    <script src=""></script>
+    <script src="../../apps/coordinadora/app.js"></script>
   </body>
+</html>
+
+</body>
 </html>
